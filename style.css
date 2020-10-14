@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+body main {
+  width: 1440px;
+  max-width: 100%;
+  margin: 85px auto;
+}
+body main h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+  color: #4c4e61;
+}
+body main h1 strong {
+  display: block;
+  font-weight: 600;
+}
+body main .description {
+  width: calc(1440px / 2.7);
+  margin: 0 auto;
+  text-align: center;
+  color: #a3a5ae;
+}
+body main section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+body main section .cards .card {
+  background-color: white;
+  width: 390px;
+  height: 300px;
+  padding: 30px;
+  margin: 30px;
+  box-shadow: 0 5px 10px #c9cacf;
+  position: relative;
+  border-top: 5px solid #fcaf4a;
+  border-radius: 5px;
+}
+body main section .cards .card h2 {
+  color: #4c4e61;
+  margin: 0;
+}
+body main section .cards .card p {
+  color: #a3a5ae;
+  margin: 0;
+}
+body main section .cards .card:nth-child(1) {
+  border-top: 5px solid #45d3d3;
+  transform: translateY(50%);
+}
+body main section .cards .card:nth-child(2) {
+  border-top: 5px solid #ea5353;
+}
+body main section .cards .card:nth-child(3) {
+  border-top: 5px solid #549ef2;
+  transform: translateY(50%);
+}
+body main section .cards .card:nth-child(4) {
+  border-top: 5px solid #fcaf4a;
+}
+body main section .cards .card :last-child {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+@media (max-width: 768px) {
+  body main section .cards .card:nth-child(1) {
+    transform: translateY(0%);
+  }
+  body main section .cards .card:nth-child(3) {
+    transform: translateY(0%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
